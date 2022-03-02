@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.containerCampanhaModelo{
+    height:calc(100vh - 0px); /* Tirar a diferença do topo da página principal */
+    background: black;
+
+    display:grid;
+    grid-template-rows:100px 1fr 50px 70px;
+    grid-template-columns:1fr 300px;
+    grid-template-areas:
+    'blocoCM01 blocoCM05' /* blocoCM = bloco Campanha Modelo */
+    'blocoCM02 blocoCM05'
+    'blocoCM03 blocoCM05'
+    'blocoCM04 blocoCM04'
+}  
+
+#blocoCampanhaModelo01{
+    background:#2c2c2c;
+    grid-area: blocoCM01;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nomeCampanha{
+    color: white;
+    margin: 20px 0 0 50px;
+    font-size: 50px;
+
+}
+.menuCampanha{
+    width:50px;
+    height:50px;
+    background-image: url(../icones/mais.png);
+    background-size: contain;
+    cursor: pointer;
+    margin: 25px 25px 0 0;
+}
+#blocoCampanhaModelo02{
+    background:#4d4d4d;
+    grid-area: blocoCM02;
+}
+#blocoCampanhaModelo03{
+    background:#2c2c2c;
+    grid-area: blocoCM03;
+}
+#blocoCampanhaModelo04{
+    background:#3d3d3d;
+    grid-area: blocoCM04;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.CMMensagem{
+    height:50px;
+    border: 0;
+    margin-top:10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    
+
+}
+#mensagemChat{
+    min-width:500px;
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 30px;
+    outline:none;
+}
+#btnEnviarMensagem{
+     width:150px;
+}
+
+#blocoCampanhaModelo05{
+    background:#1f1d1d;
+    grid-area: blocoCM05;
+    
+}
+
+
+#CMControleSubmenu{
+    height:50px;
+    width:50px;
+    transition: 1s;
+    cursor: pointer;
+}
+.CMIconInverter1{
+    background-image: url(../icones/esquerda.png);
+    transform: rotate(360deg);
+    background-size: contain;
+    cursor: pointer;
+}
+.CMIconInverter2{
+    background-image: url(../icones/direita.png);
+    background-size: contain;
+}
+.CMIdeslizar1{
+    width:calc(100% + 250px);
+    
+}
+.CMIdeslizar2{
+    margin-left: 250px;
+    transition: 1s;
+    
+ }
+ #btnEnviarMensagem:hover{
+     background: #1f1d1d;
+     color: white;
+     cursor: pointer;
+     
+ }
+ 

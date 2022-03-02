@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <style>
+        .page1{
+            font-size: 50px;
+            display:none;
+        }
+        .page2{
+            display:block;
+        }
+    </style>
+
+</head>
+<body>
+    
+        <a id="entrar" class="page1" href="principal.html">Entrar</a>
+
+
+    <script>
+        
+        const senha = parseInt(prompt('Digite a senha:'))
+        const entrar = document.getElementById('entrar')
+
+        if(senha == 8246){
+            entrar.classList.add('page2')
+        }else{
+            alert('Senha Incorreta')
+        }
+
+        
+
+        
+        
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+.leiaut{
+    background:#2b2a2a;
+    height: 100vh;
+    
+    display:grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns:70px 300px 1fr;
+    grid-template-areas: 
+    'bloco01 bloco01 bloco01'
+    'bloco02 bloco03 bloco04';
+}
+
+#bloco01{
+    background:#2b2a2a;
+    grid-area: bloco01;
+    display:flex;
+    justify-content:space-between;
+}
+.logoPrincipal{
+    color: rgb(165, 165, 165);
+    font-size: 60px;
+    margin-left:115px;
+    height:40px;
+    width:40px;
+    
+}
+
+#logoPerfil{
+    height:50px;
+    width:50px;
+    margin: 10px 70px 0 0;
+    background-image: url(icones/perfil.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+#bloco02{
+    background:#2b2a2a;
+    grid-area: bloco02;
+    padding-left: 10px;
+    
+}
+#bloco02 .logo{
+    height:50px;
+    width:50px;
+    margin-top: 30px;
+    background-size: contain;
+    cursor: pointer;
+}
+#bloco02 .logo:hover{
+    height:60px;
+    width:60px;
+    margin-top: 20px;
+    margin-left: -5px;
+    
+}
+#controleSubmenu{
+    transition: 1s;
+}
+.iconInverter1{
+    background-image: url(icones/esquerda.png);
+    transform: rotate(360deg);
+}
+.iconInverter2{
+    background-image: url(icones/direita.png);
+    transition: 1s;
+    
+}
+
+#logoConversas{
+    background-image: url(icones/contatos.png);
+}
+#logoCampanhas{
+    background-image: url(icones/bloco.png);
+}
+#logoPesquisa{
+    background-image: url(icones/pesquisar.png);
+}
+#logoNovaCampanha{
+    background-image: url(icones/mais.png);
+}
+
+
+
+
+
+#bloco03{
+    background:#1f1d1d;
+    grid-area: bloco03;
+    border-radius: 15px 0 0 15px;
+}
+
+#bloco04{
+    background:#4d4d4d;
+    grid-area: bloco04;
+    border-radius:0 15px 15px 0;
+    transition: 1s;
+}
+
+.bloco04Deslizar{
+    margin-left: -300px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Colocando legenda nos incones sem nomes */
+.spam[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+  }
+  [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 10px);
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    background-color: #000000;
+    color: White;
+    
+
+  }
+  [data-tooltip]:hover:after {
+    display: block;
+    
+  }
+  /* FIM */
+
+  /* Definindo o aumento dos icones do menu, sem empurrar
+  os icones abaixo */
+.logo{
+    height: 40px;
+    width:40px;
+    margin-top: 20px;
+}
+.logo:hover{
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
+}
+/* FIM */

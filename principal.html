@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSSs/campanhaModelo.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="leiaut">
+            <div id="bloco01" class="blocos">
+                <h1 class="logoPrincipal">ProRPG</h1>
+                
+                <a id="logoPerfil" onclick="abrirSubmenu('perfil', 'bloco03') + abrirPagina('perfil', 'bloco04')">
+                    <spam 
+                    class="spam logo" 
+                    data-tooltip="Perfil"
+                    id="logoPerfil">
+                    </spam>         
+                </a>
+            </div>
+            <div id="bloco02" class="blocos">
+                <div class="iconInverter1 logo " id="controleSubmenu">
+                </div>
+                <div onclick="abrirSubmenu('conversas', 'bloco03') + abrirPagina('conversas', 'bloco04')"
+                    class="spam logo" 
+                    data-tooltip="Conversas"
+                    id="logoConversas">
+                </div>
+                <div onclick="abrirSubmenu('campanhas', 'bloco03') + abrirPagina('campanhas', 'bloco04')"
+                    class="spam logo" 
+                    data-tooltip="Campanhas" 
+                    id="logoCampanhas">
+                </div>
+                <div onclick="abrirSubmenu('pesquisa', 'bloco03') + abrirPagina('pesquisa', 'bloco04')"
+                    class="spam logo" 
+                    data-tooltip="Pesquisa" 
+                    id="logoPesquisa">
+                </div>
+                <div onclick="abrirSubmenu('novaCampanha', 'bloco03') + abrirPagina('novaCampanha', 'bloco04')"
+                    class="spam logo" 
+                    data-tooltip="Criar nova Campanha" 
+                    id="logoNovaCampanha">
+                </div>
+            </div>
+            <div id="bloco03" class="blocos"></div>
+            <div id="bloco04" class="blocos "></div>
+        </div>
+    </nav>
+
+
+
+
+    <script type="text/javascript"  src="index.js"></script>
+    <script type="text/javascript"  src="JSs/campanhaModelo.js"></script>
+</body>
+</html>
